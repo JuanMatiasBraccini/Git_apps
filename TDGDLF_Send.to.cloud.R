@@ -1,5 +1,5 @@
 library(rsconnect)
-
+handl_OneDrive=function(x)paste('C:/Users/myb/OneDrive - Department of Primary Industries and Regional Development/Matias',x,sep='/')
 #---Share apps
 #replace own computer with server that shares with the cloud
 #note: put all stuff in the same directory (data, images, etc)!!!
@@ -8,5 +8,5 @@ Sys.setlocale(locale="English")
 rsconnect::setAccountInfo(name='matias',
                           token='119661803DA371BDDD2B491978EFD87D',
                           secret='fMFWdXt2BaX90mwDvLi96WipkD4K9NAuZDr+4M+q')
-Path='C:/Matias/Analyses/Apps/TDGDLF'
+Path=handl_OneDrive('Analyses/Apps/TDGDLF')
 rsconnect::deployApp(Path)  

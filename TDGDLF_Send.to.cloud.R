@@ -1,5 +1,6 @@
 library(rsconnect)
-handl_OneDrive=function(x)paste('C:/Users/myb/OneDrive - Department of Primary Industries and Regional Development/Matias',x,sep='/')
+if(!exists('handl_OneDrive')) source('C:/Users/myb/OneDrive - Department of Primary Industries and Regional Development/Matias/Analyses/SOURCE_SCRIPTS/Git_other/handl_OneDrive.R')
+
 #---Share apps
 #replace own computer with server that shares with the cloud
 #note: put all stuff in the same directory (data, images, etc)!!!

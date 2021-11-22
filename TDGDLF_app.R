@@ -1,3 +1,4 @@
+.libPaths('C:/~/R/win-library/4.0')
 library(shiny)
 
 #key notes: Behind the app webpage, my computer runs the R script. 
